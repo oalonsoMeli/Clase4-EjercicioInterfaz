@@ -9,11 +9,13 @@ public abstract class Transaccion implements Transaccionable{
 
     @Override
     public String transaccionOk() {
-        return null;
+        String mensaje = "La transacción se realizó con exito";
+        return mensaje;
     }
 
     @Override
     public String transaccionNoOk() {
-        return null;
+        String mensaje = "La transacción no se realizó";
+        return mensaje;
     }
 }

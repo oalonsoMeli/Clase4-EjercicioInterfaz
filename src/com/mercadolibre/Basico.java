@@ -9,16 +9,19 @@ public class Basico extends Cliente{
     public void consultarSaldo(){
         ConsultaDeSaldo cs = new ConsultaDeSaldo(this);
         cs.consultarSaldo();
+        System.out.println("Saldo actual: " + this.getSaldoEnCuenta());
     }
 
     public void pagarServicio(Double dineroAPagar){
         PagarServicio ps = new PagarServicio(this);
         ps.realizarPago(dineroAPagar);
+        System.out.println("Saldo actual: " + this.getSaldoEnCuenta());
     }
 
     public void retirarDinero(Double dineroARetirar){
         RetiroEfectivo re = new RetiroEfectivo(this);
         re.retirarEfectivo(dineroARetirar);
+        System.out.println("Saldo actual: " + this.getSaldoEnCuenta());
     }
 
 }

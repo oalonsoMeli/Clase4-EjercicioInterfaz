@@ -9,9 +9,9 @@ public class Transferencia extends Transaccion{
     public void realizarTransferencia(Double dineroATransferir){
         if(this.cliente.getSaldoEnCuenta() >= dineroATransferir){
             this.cliente.setSaldoEnCuenta(this.cliente.getSaldoEnCuenta() - dineroATransferir);
-            transaccionOk();
+            System.out.println(transaccionOk());
         } else {
-            transaccionNoOk();
+            System.out.println(transaccionNoOk());
         }
     }
 }

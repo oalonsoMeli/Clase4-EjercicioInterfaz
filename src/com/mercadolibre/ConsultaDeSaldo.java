@@ -6,7 +6,7 @@ public class ConsultaDeSaldo extends Transaccion{
     }
 
     public Double consultarSaldo(){
-        transaccionOk();
+        System.out.println(transaccionOk());
         return this.cliente.getSaldoEnCuenta();
     }
 }

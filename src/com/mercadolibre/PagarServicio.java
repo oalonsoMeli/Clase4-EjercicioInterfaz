@@ -9,9 +9,9 @@ public class PagarServicio extends Transaccion{
     public void realizarPago(Double dineroAPagar){
         if(this.cliente.getSaldoEnCuenta() >= dineroAPagar){
             this.cliente.setSaldoEnCuenta(this.cliente.getSaldoEnCuenta() - dineroAPagar);
-            transaccionOk();
+            System.out.println(transaccionOk());
         } else {
-            transaccionNoOk();
+            System.out.println(transaccionNoOk());
         }
     }
 }

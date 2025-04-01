@@ -9,7 +9,7 @@ public class Deposito extends Transaccion {
 
     public void realizarDeposito(Double dineroADepositar){
         this.cliente.setSaldoEnCuenta(this.cliente.getSaldoEnCuenta() + dineroADepositar);
-        this.transaccionOk();
+        System.out.println(transaccionOk());
     }
 
 

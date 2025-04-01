@@ -9,9 +9,9 @@ public class RetiroEfectivo extends Transaccion{
     public void retirarEfectivo(Double dineroARetirar){
         if(this.cliente.getSaldoEnCuenta() >= dineroARetirar){
             this.cliente.setSaldoEnCuenta(this.cliente.getSaldoEnCuenta() - dineroARetirar);
-            transaccionOk();
+            System.out.println(transaccionOk());
         } else {
-            transaccionNoOk();
+           System.out.println(transaccionNoOk());
         }
     }
 }
